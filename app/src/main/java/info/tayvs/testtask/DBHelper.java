@@ -73,7 +73,7 @@ public class DBHelper extends SQLiteOpenHelper {
             int lastNameColIndex = c.getColumnIndex("last_name");
 
             //getting user
-            user = new User(c.getString(firstNameColIndex), c.getColumnName(lastNameColIndex));
+            user = new User(c.getString(firstNameColIndex), c.getString(lastNameColIndex));
         }
 
 
